@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<title>GeorgeHM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="tipografia.css">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<link rel="stylesheet" type="text/css" href="./scss/css/font-awesome.min.css">
+<link rel="icon" href="img/fav.ico">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+<body class="w3-content w3-black" style="max-width:1500px;">
+
+<!-- Imagen principal-->
+<header class=" w3-display-container w3-center parallax" id="hr">
+  <div class="header-page">
+  </div>
+  <div class="mySlides w3-animate-opacity">
+    <div class="nav"></div>
+    <div class="row">
+      <div class="col">
+        <br><br><br><br><br><br><br><br><br>
+        <div class="txt">
+        <p class="main-string">"SOCIEDAD,UNIDAD Y DIVERSIDAD"</p>
+        <p>George Herbert Mead</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
+
+<!-- BIOGRAFIA -->
+<div class="w3-padding-20 w3-light-grey biografia">
+  <div class="row">
+      <h1 class="w3-jumbo bti"><b>Biografía</b></h1>
+  </div>
+  <div class="w3-row-padding bio">
+    <div class="w3-col l4 m6 col-img">
+      <img class="w3-image imghm" src="img/ghm.jpg" style="min-width:500px" width="200" height="450">
+    </div>
+    <div class="col-text">
+      <p>Nació en Hadley en 1863.  Fue un psicosociólogo y filósofo estadounidense. Profesor en Chicago desde 1894 y figura del pragmatismo, fue pionero de la  psicología social.</p>
+      <p>
+        Formado en el Oberlin College y en la Universidad de Harvard, por la que se graduó en 1888.
+      </p>
+      <p>
+         George Herbert Mead residió luego durante tres años en Alemania, ahí estudió psicología y filosofía en la Universidad de Leipzig y en la Universidad  de Berlín. Tras un breve periodo como catedrático en la Universidad de Michigan, a partir de 1894 se estableció en Chicago, en cuya universidad desarrolló toda su carrera docente como profesor de psicología y filosofía.
+      </p>
+      <p>
+        Fue un destacado pensador de la corriente del pragmatismo estadounidense, los estudios de George H. Mead se orientaron al análisis de las relaciones entre el individuo y la sociedad. 
+      </p>
+      <p>
+        Sus obras más importantes, publicadas por sus discípulos tras su muerte, son La filosofía del presente (1932), Espíritu, persona y sociedad (1934) y La filosofía del acto (1938).
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Contenido -->
+<div class="w3-container w3-padding-64 w3-dark-grey w3-center">
+  <h1 class="w3-jumbo"><b>Contenido</b></h1>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <a href="teoria.html"><i class="fa fa-cogs w3-text-red w3-jumbo icono"></i></a> 
+      <p>Teoría</p>
+    </div>
+    <div class="w3-col s3">
+      <a href="#"><i class="fa fa-child w3-text-yellow w3-jumbo icono"></i></a>
+      <p>Actividad</p>
+    </div>
+    <div class="w3-col s3">
+      <a href="frases.html"><i class="fa fa-pencil-square-o w3-text-green w3-jumbo icono"></i></a>
+      <p>Frases</p>
+    </div>
+     <div class="w3-col s3">
+      <a href="glosario.html"><i class="fa fa-book w3-text-white w3-jumbo icono"></i></a>
+      <p>Glosario</p>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+</footer>
+<script>
+// Sliders
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
